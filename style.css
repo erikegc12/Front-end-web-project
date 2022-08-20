@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.center {
+    display: flex;
+    max-width: 1100px;
+    padding: 0 2%;
+    margin:0  auto;
+    flex-wrap: wrap;
+}
+
+section.main {
+    
+    background-image: url(images/bg.svg);
+    background-position: center;
+    background-size: cover;
+    min-height: 700px;
+    padding: 20px 0px 80px 0px;
+}
+
+.menu {
+    display: flex;
+    width: 100%;
+}
+
+.logo-menu {
+    width: 50%;
+}
+
+.itens-menu {
+    width: 50%;
+}
+
+.itens-menu a{
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.itens-menu a:hover {
+    border-bottom: 2px solid #fd3;
+}
+
+.itens-menu a.contato {
+    background-color: rgb(43, 76, 226);
+    padding: 10px 10px;
+    border-radius: 12px;
+
+}
+
+.mockup {
+    display: block; /*Usei block ao invés de flex por conta do alinhamento com text align e fica mais simples com os dois textos*/
+    width: 100%;
+    color:white ;
+    text-align: center;
+    padding-top: 100px ; 
+}
+
+.mockup h1 {
+    font-size: 50px;
+}
+
+.mockup img {
+   max-width: 100%; 
+}
+
+section.marcas {
+    padding: 100px 0;
+}
+
+section.marcas img{
+    width: 20%;
+}
+
+section.nos {
+    padding: 40px 0;
+    background-color: rgb(255, 255, 255);
+}
+
+section.nos > .center {
+    max-width: 1280px ;
+}
+
+section.nos > .center > h2{
+    font-size: 64px;
+    text-align: center;
+    width: 100%;
+}
+
+
+section.nos > .center > p{
+    text-align: center;
+    width: 100%;
+}
+
+.diferenciais {
+    display: flex;
+    margin-top: 50px;
+}
+
+.box-diferenciais {
+    box-shadow: 0px 20px 40px #191fc031 ;
+    width: 33%;
+    margin-right: 2%;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.box-diferenciais h3 {
+    font-size: 28px;
+    margin: 20px 0;
+    color: black;
+}
+
+.box-diferenciais p {
+    font-size: 13px;
+    color: #7E92AC;
+    margin-bottom: 20px;
+}
+
+section.sec_banner {
+    background-image: url(images/seg_banner.svg);
+    background-size: cover;
+    background-position: center;
+    padding: 20px 10px ;
+    min-height:  200px;
+    text-align: center;
+    color: azure;
+    margin-left: 1px;
+    margin-right: 1px;
+    
+}
+
+section.sec_banner h2,
+section.sec_banner p {
+    font-weight: normal;
+    margin: 10px;
+}
+
+section.sec_banner h2 {
+    font-size: 40px;
+}
+
+section.sec_banner a {
+    display: inline-block;
+    padding: 10px 40px;
+    background: #fd3;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(43, 76, 226); 
+    border-radius: 10px;
+    
+}
+
+section.sec_banner a:hover {
+    border-bottom: 3px solid rgb(0, 45, 247);
+    border-right: 2px solid rgb(0, 45, 247);  
+}
+
+
+.lista-beneficios a {
+    display: flexbox;
+    padding: 10px 40px;
+    background: rgb(43, 76, 226);;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(255, 255, 255); 
+    border-radius: 10px;
+    
+}
+
+.lista-beneficios a:hover {
+    border-bottom: 3px solid #fd3;
+    
+}
+
+
+.lista-beneficios h1 {
+    font-size: 40px;
+    width: 100%;
+}
+
+.beneficios {
+    padding: 40px 0;
+}
+
+.lista-beneficios {
+    width: 35%;
+    margin-top: 30px;
+}
+
+.lista-beneficios p {
+    color: black;
+    vertical-align: middle;
+    font-size: 15px;
+    margin-top:20px;
+   
+}
+
+.lista-beneficios span {
+    display: inline-block;
+    width: calc(100% - 70px);
+}
+
+.lista-beneficios img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 70px;
+}
+
+.img-beneficios {
+    width: 65%;
+}
+
+.img-beneficios img {
+    max-width: 100%;
+}
+
+
+
+@media screen and (max-width:768px) {
+    
+    .lista-beneficios, 
+    .img-beneficios {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    .diferenciais {
+        
+        flex-wrap: wrap;
+        
+    }
+    
+    .box-diferenciais {
+        width:100% ;
+        margin-right: 0;
+        
+    }
+
+    section.marcas > .center {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.marcas img {
+        width: 30%;
+        max-width: 400px;
+       
+    }
+
+    
+}
+
+
+
