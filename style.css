@@ -229,9 +229,80 @@ section.sec_banner a:hover {
     max-width: 100%;
 }
 
+section.depoimentos {
+    background-color: azure;
+    padding: 40px 0 ;
+
+}
+
+section.depoimentos >h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.container-slider {
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.container-slider-single {
+    float: left;
+    background-color: rgb(243, 243, 243);
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.container-slider-single p {
+    margin: 15px 0;
+    color: #798492;
+    font-size: 14px;
+}
+
+.slick-slide {
+    margin-left: 27px;
+}
+
+.slick-list {
+    margin-left: -27px;
+}
+
+.slick-dotted ul {
+    list-style-type: none;
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+}
+
+.slick-dotted li {
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.slick-dotted li button:focus {
+    outline: 0;
+}
+.slick-dotted li button {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    color: rgb(0, 45, 247);
+    border-width: 0;
+    background: rgb(0, 45, 247);
+    opacity: 1;
+    cursor: pointer;
+}
+
+li.slick-active button {
+    background: #fd3;
+    color: #fd3;
+}
+
 
 
 @media screen and (max-width:768px) {
+
+    
     
     .lista-beneficios, 
     .img-beneficios {
